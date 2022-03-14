@@ -1,0 +1,44 @@
+header{
+    margin-top: 7rem;
+    background-color: rgb(81, 119, 161);
+    color: white;
+    
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+    .header__container{
+        margin-top: 6rem;
+        text-align: center;
+        h1{
+            margin-top: 3rem;
+        }
+        p{
+            margin: 1rem 0;
+            line-height: 2;
+        }
+        a{
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+    }
+    
+  
+}
+
+}
+@media screen and (max-width:850px) {
+    header{
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+            .header__image{
+        height: 100vh; 
+            }
+        }
+        
+    }
+}

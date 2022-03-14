@@ -1,0 +1,142 @@
+nav{
+    display: grid;
+    place-items: center;
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    background-color: transparent;
+    
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.3);
+
+.logo{
+    font-size: 1.5rem;
+}
+
+    .nav__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    ul{
+        display:flex;
+        align-items: center;
+        gap: 3rem;
+        li{
+            a{
+                color: black;
+            }
+            &:nth-child(5){
+                background-color: rgb(166, 194, 221);
+                padding: 0.9rem ;
+                border-radius: 15px;
+                &:hover{
+                    background-color: rgb(152, 214, 226) ;
+                    border: 1px solid rgb(10, 236, 236);
+                   
+                }
+                a{
+                    color: rgb(6, 7, 7);
+                    
+                }
+            }
+            a{
+                font-size: 1.2rem;
+                transition: all 0.4s;
+                &:hover{
+                    color:rgb(17, 6, 56);
+                    font-weight: 550;
+                }
+            }
+        }
+         
+    }
+    .button{
+       
+        display: none;
+        cursor: pointer;
+        background-color: transparent;
+       
+     .bar{
+        display: block;
+        width: 2rem;
+        height: 4px;
+        margin-bottom: 5px;
+        background-color: rgb(0, 0, 0);
+        transition:all 0.4s ease-in-out
+    }
+       
+    }
+}
+
+    
+@media screen and (max-width:850px){
+    nav{
+
+        .nav__container{
+            ul{  
+            position: fixed;
+            flex-direction: column;
+            right: -100%;
+            top: 3.8rem;
+            width: 100%;
+            gap: 0;
+            height:fit-content;
+            transition: all ease-in-out 0.5s;
+            background-color: rgb(65, 143, 180);
+               li{
+                box-shadow: 0 -4rem 10rem rgba(0,0,0,0.15);
+                   width: 100%;
+                   height: 6rem;
+                   padding: 1rem;
+                   display: grid;
+                   place-items:center;
+                   background-color: rgb(65, 143, 180);
+                   transition: all 0.4s;
+                   a{
+                       transition: all 0.5s;
+                       &:hover{
+                           color: white;
+                       }
+                   }
+                   &:hover{
+                       background-color:rgb(90, 170, 207) ;
+                   }
+               }
+               
+            }
+           ul.active{
+               right: 0%;
+               display: flex;
+           }
+        }
+        .button{
+            display: block;
+
+        }
+        .button.active{
+            .bar:nth-child(2){
+                opacity: 0;
+            }
+            .bar:nth-child(1){
+               transform: translateY(9px) rotate(45deg);
+            }
+            .bar:nth-child(3){
+                transform: translateY(-9px) rotate(-45deg);
+            }
+        
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+

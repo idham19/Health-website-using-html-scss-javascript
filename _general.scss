@@ -1,0 +1,69 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: Montserrat,sans-serif;
+    line-height: 1.2;
+    user-select: none;
+background-color:white;
+}
+.container{
+   width: 85%;
+   margin:0 auto;
+}
+.window_scroll{
+    background-color: rgb(98, 150, 233);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4{
+    line-height: 1.2;
+}
+
+section{
+    margin-top: 6rem;
+
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        margin:0.6rem auto 2.5rem ;
+    }
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: chocolate;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover{
+    border: 1px white solid;
+
+
+    }
+}
+
+/*---------------media query 550px  */
+@media  screen and (max-width:550px) {
+    .container{
+        width: 90%;
+    }
+    
+}
+
+
+
+
