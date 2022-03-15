@@ -62,7 +62,10 @@
         .container{
             .swiper.mySwiper{
                 width: 100%;
-                padding: 1rem;
+                padding: 3rem;
+                 .swiper-wrapper{
+                    padding:2rem;
+                }
 
 
             }
